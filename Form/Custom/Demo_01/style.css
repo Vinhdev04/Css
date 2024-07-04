@@ -1,0 +1,85 @@
+body {
+  color: #333;
+}
+
+main {
+  padding: 30px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+form {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-top: 20px;
+}
+.form-label,
+.form-input {
+  display: block;
+}
+.form-input {
+  width: 240px;
+  height: 34px;
+  margin-top: 10px;
+  padding: 4px 8px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.form-group .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #f05123;
+  cursor: pointer;
+}
+
+.form-group .btn:hover {
+  opacity: 0.7;
+}
+
+/* Tạo after và before cho label */
+.checkbox-group label::after,
+.checkbox-group label::before {
+  content: "";
+  display: inline-block;
+}
+
+/* Dùng before tạo checkbox  */
+.checkbox-group label::before {
+  width: 14px;
+  height: 14px;
+  border: 1px solid red;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* Kiêm tra xem thẻ có kiểu là checkbox đã được check chưa -> tác động vào tất cả thẻ label::before nằm sau type = checkbox */
+.checkbox-group [type="checkbox"]:checked ~ label::before {
+  background-color: #11a718;
+}
+
+/* Dùng after vẻ dấu tích checkbox*/
+.checkbox-group [type="checkbox"]:checked ~ label::after {
+  width: 8px;
+  height: 4px;
+  border-left: 2px solid #f7f6f6;
+  border-bottom: 2px solid #f2f2f2;
+  rotate: -45deg;
+  position: absolute;
+  top: 7px;
+  left: 3px;
+}
+
+.checkbox-group label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}

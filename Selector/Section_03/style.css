@@ -1,0 +1,93 @@
+/* -------------- Pseudo-class selector P2 --------------  */
+
+/* 1. :hover */
+/*  a:hover PHẢI xuất hiện sau a:link và a:visited để có hiệu  quả!
+    a:active PHẢI xuất hiện sau a:hover  để có hiệu quả */
+/* unvisited link -> chưa được click*/
+a:link {
+  color: #ff0000;
+}
+
+/* visited link  -> đã được truy cập*/
+a:visited {
+  color: #00ff00;
+}
+
+/* mouse over link ->  di chuột vào  */
+a:hover {
+  color: #ff00ff;
+}
+
+/* selected link -> đang được click*/
+a:active {
+  color: #0000ff;
+}
+
+/* :focus */
+input:focus {
+  background-color: #00ff00;
+  border: 1px solid #000;
+  outline: none;
+}
+
+/* :focus */
+input[type="text"]:focus {
+  width: 250px;
+}
+
+/* :checked */
+input[type="radio"]:checked {
+  width: 30px;
+  height: 30px;
+}
+
+/* :target */
+:target {
+  border: 2px solid #d4d4d4;
+  background-color: #e5eecc;
+}
+
+/* :valid */
+.form:valid {
+  border: 2 solid #ff0000;
+  background-color: #0000ff;
+}
+
+/* :invalid */
+input:invalid {
+  border: 10px solid #ff00ff;
+  background-color: none;
+}
+
+/* :invalid -> nếu ko nhập đủ thông tin yêu cầu cảu required hoặc ko đúng định dạng yêu cầu -> hoạt động */
+input[type="password"]:invalid {
+  border: 2px solid red;
+}
+
+/* :in-range => max = 7 => input <=7 :in-range hoạt động css */
+input:in-range {
+  border: 2px solid yellow;
+}
+
+/* :out-of-range  -> max = 7 => nếu nhập input > 7 => :out-of-range hoạt động css */
+input:out-of-range {
+  border: 2px solid red;
+} /* :out-of-range */
+
+/* :disable & :enable */
+.enabledBtn:enabled {
+  background: #ffff00;
+  cursor: pointer;
+}
+
+.disabledBtn:disabled {
+  background: #dddddd;
+  cursor: not-allowed;
+}
+
+/* :empty */
+p:empty {
+  width: 60px;
+  height: 20px;
+  background-color: lightgray;
+}

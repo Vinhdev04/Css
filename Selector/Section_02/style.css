@@ -1,0 +1,51 @@
+/* CSS Combinator */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "MONospace", "Helvetica Neue";
+}
+
+h2 {
+  color: red;
+  font-size: 3rem;
+}
+
+/* 1. descendant selector (space)  */
+.content {
+  color: red;
+}
+
+.desc,
+.btn {
+  color: rgb(191, 52, 13);
+  font-size: 3rem;
+}
+
+div p {
+  background-color: greenyellow;
+}
+
+/* 2. adjacent sibling selector (+)  => chọn thẻ nằm ngay sau(nằm liền kề)  */
+
+.title + .content {
+  color: blue;
+}
+
+/* 3. general sibling selector (~) => chọn element nằm cùng cấp ko nhất thiết phải liền kề */
+
+.title ~ .content {
+  color: green;
+}
+
+/* 4. child selector (>)  => chọn thẻ (element) con  trực tiếp của thẻ (element) đang chỉ định */
+.list li {
+  color: blue;
+  font-size: 2rem;
+}
+
+.list > li {
+  color: pink;
+  font-size: 3rem;
+}

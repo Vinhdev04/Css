@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/Icons/favicon.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pseudo-class selectors P1</title>
+  </head>
+  <body>
+    <h1 style="text-align: center; text-decoration: underline;color: red;">Pseudo-class selectors</h1>
+      <h2>1. <mark>:link, :visited, :hover, :active</mark></h2>
+    <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">Get Link</a>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+      possimus!
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorem?
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorem?
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorem?
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorem?
+    </p>
+    <input type="text"></input><br><br>
+      <h2>2. <mark>:checked</mark></h2>
+    <label for="gender">Giới tính:</label>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">Nữ</label>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">Nam</label>
+    <input type="radio" name="gender" id="other" value="other">
+    <label for="other">Khác</label>
+
+    <h2>3. <mark>:target</mark></h2>
+    <p>
+      <a href="#desc__01">Go to link 1</a>
+    </p>
+    <p>
+      <a href="#desc__02">Go to link 2</a>
+    </p>
+    <p>Click on the links above and the :target selector highlight the current active HTML anchor.</p>
+
+    <p id="desc__01"><b>New content 1...</b></p>
+    <p id="desc__02"><b>New content 2...</b></p>
+      <h2>4. <mark>:valid</mark></h2>
+      <input type="text" name="" id="" class="form" value="pcv.fed@gmail.com">
+        <h2>5. <mark>:invalid</mark></h2>
+        <label for="password"> Password:
+          <input type="password" name="password" id="password" required> 
+        </label>
+        <h2>6. <mark>:in-range & out-of-range</mark></h2>  
+        <input type="number" min="5" max="10" value="7">
+        <p>Try typing a number out of range (less than 5 or higher than 10), to see the styling disappear.</p>
+
+          <h2>7. <mark>:disable & :enable</mark></h2>
+          <button class="enabledBtn">Submit</button><br><br>
+          <button class="disabledBtn">Reset</button>
+
+          <h2>8. <mark>:empty</mark></h2>
+          <p></p>
+          <p>Hello</p>
+          <p>Goodby</p>
+  </body>
+</html>

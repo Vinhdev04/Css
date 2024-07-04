@@ -1,0 +1,93 @@
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+h1::selection {
+  color: white;
+  background-color: #000;
+}
+
+/* Chọn tất cả thẻ p tác động css*/
+p {
+  color: red;
+  background-color: transparent;
+  padding: 10px 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+body {
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+/* ------------- Sử dụng Class và Id  & cursor  ------------------ */
+#title {
+  color: blue;
+  cursor: all-scroll;
+}
+
+.first__desc {
+  background-color: red;
+  color: #fff;
+  font-style: italic;
+  cursor: cell;
+}
+
+.second__desc {
+  background-color: green;
+  color: #fff;
+  font-style: oblique;
+  cursor: help;
+}
+
+.third__desc {
+  background-color: blue;
+  color: #fff;
+  font-weight: bolder;
+  cursor: grab;
+}
+
+.four__desc {
+  background-color: yellow;
+  color: #000;
+  font-weight: bold;
+  cursor: no-drop;
+}
+
+.five__desc {
+  background-color: palegreen;
+  color: #000;
+  cursor: progress;
+}
+
+.six__desc {
+  background-color: blueviolet;
+  color: #ffff;
+  cursor: zoom-in;
+}
+
+.seven__desc {
+  background-color: hotpink;
+  color: #000;
+  cursor: zoom-out;
+}
+
+.eight__desc {
+  background-color: indigo;
+  color: #fff;
+  cursor: wait;
+}
+
+.nine__desc {
+  background-color: mediumpurple;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.ten__desc {
+  background-color: rgb(85, 91, 211);
+  color: #fff;
+  cursor: pointer;
+}
